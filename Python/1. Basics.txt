@@ -1,0 +1,21 @@
+# Variables
+	No Format Declaration, Simply use them
+
+# I/O
+	var = datatype(input("statement"))
+	print("",var)
+	print(f'output contains {variable} also')
+	print("",end="")  -> end is used for removing newline after print
+	print("","",sep="")  -> sep is used for adding something after every new string
+
+# Comments [Very Important]
+	# for single line
+	"""  """ for multiline
+
+# Maths
+	+,-,*,% as they are used
+	/ for floating division
+	// for non-fractional/non-decimal part
+	** for power
+	range(a,b) or range(b) gives list of number from a to b
+	

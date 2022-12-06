@@ -1,0 +1,21 @@
+# Strings
+	'' or "" for string declaration
+	\' or \" for esacping string end
+	\n for newline
+
+	r' ' for no special\ usage
+	"""  """ for printing as it is either spaces or newline enter etc.
+	
+# Concatenation
+	4 * 'rpt'      -> 'rptrptrptrpt'
+	'str1' 'str2'
+	'str1' + 'str2'
+	 var + 'str2'
+	 text = ('str1'
+		   'str2')
+
+# Indexing
+	Left to Right -> 0 to n-1
+	Right to Left -> -1 to -n
+	[l:r] slices from position l to poistion r
+	len(str) gives length of string

@@ -1,0 +1,24 @@
+# Defining Function
+	def fun_name(Inputs):
+		exec-stat
+		return optional
+
+# Default Argument Values
+	def fun(var,kw="value"):  -> If no value inputted for kw, then "value" is taken by default
+
+# Args & Kwargs
+	def fun(var, *arguments, **keywords):
+		for arg in arguments:
+			arg-stats
+		for kw in keywords:
+			kw : keywords[kw]
+
+# More On Positional & Keyword Arguments
+	def pos_only_arg(arg, /):
+    		print(arg)
+
+	def kwd_only_arg(*, arg):
+    		print(arg)
+
+	def combined_example(pos_only, /, standard, *, kwd_only):
+    		print(pos_only, standard, kwd_only)
