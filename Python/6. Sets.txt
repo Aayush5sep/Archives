@@ -1,0 +1,19 @@
+# Sets Declaration
+	set = {'a', 'b', 'c', 'd', 'o'}  -> Unique values only
+	a = {x for x in 'abracadabra' if x not in 'abc'}
+	b = set('alabacama')
+
+	a - b                              # letters in a but not in b
+	a | b                              # letters in a or b or both
+	a & b                              # letters in both a and b
+	a ^ b                              # letters in a or b but not both
+
+# Set Functions
+	len(set)
+	.add()
+	.remove()
+	.clear()
+	.disjoint(set2)	-> True if empty Intersection
+	.issubset(set2)	-> Subset of other set
+	sorted(set)
+

@@ -1,0 +1,17 @@
+# Dictionary Declarations
+	dictn = {'k1':v1, 'k2':v2}
+	dictn['k3'] = v3
+	dict(k1=v1, k2=v2)
+	dict([('k1',v1), ('k2',v2)])	-> List of key-value pairs to dictionary
+	{k:v for v in range}
+
+# Dictionary Functions
+	len(d)
+	list(d)	-> List of all Keys
+	del d[key]
+	.clear()
+	.items()	-> Returns key,value pairs
+	.values()
+
+# Iterating
+	for k, v in d.items():
