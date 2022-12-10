@@ -1,0 +1,13 @@
+# Inbuilt Functions
+	
+abs(num)	-> Returns absolute value
+round(num, precision)	-> Round-off the decimal upto given precision(default=0)
+
+all(), any()  -> Acts like AND, OR for elements in the iterable
+dir()  -> Displays all functions associated with an object
+enumerate(iterable_data, starting_index)  -> Adds counter to an iterable data
+
+max(lst), min(lst), sum(lst), len(lst)  -> Some list related functions
+
+map(function, iterable)  -> Performs function on each iter_element
+filter(bool_func, iterable)  -> Filters iter_elements satisfying the function
