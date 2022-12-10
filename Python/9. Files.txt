@@ -1,0 +1,9 @@
+# File Opening
+	f = open('file_name', 'open_mode', encoding="utf-8")
+		modes -> w(write new), r(read only), a(appending), r+(reading & writing new), b(binary mode)
+# File Closing
+	f.close() -> Closes the file
+	f.closed  -> Returns T/F whether file is closed or not
+# Context Manager(with) -> Prevents memory leak since no use of f.close()
+	with open("file_name", 'open_mode') as f:
+		statements_execution

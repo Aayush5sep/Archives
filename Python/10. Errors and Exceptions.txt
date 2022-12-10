@@ -1,0 +1,16 @@
+# Handling Exceptions
+	try:
+		statement & break
+	execpt {{Error}}:
+		statement execution
+	else:
+		another_statement
+	finally:
+		statement_that_executes_in_all_cases
+
+	=> Exceptions -> ImportError, ModuleNotFoundError, IndexError, KeyError, RuntimeError, SyntaxError, TimeoutError,
+				IndentationError, SystemError, TypeError, ZeroDivisionError, ConnectionError, FileNotFoundError,
+
+# Raising Exceptions
+	raise {{Error}}("message")
+	raise {{Error}} from exc  ->  To show its a direct consequence of another error
