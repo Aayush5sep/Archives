@@ -1,0 +1,23 @@
+-> Functions that takes other functions as arguments are called Higher Order Function.
+	def func1(var):				def func2(var):
+		return something				return something
+	def func(oper,vars):
+		return func(vars)		-> Higher Order Function
+
+# Decorators
+	takes function as arguments, adds some functionality & return a function
+
+	def add_features(func):		-> Higher Order Function
+		def wrapper(varis,*args,**kwargs):		-> Decorator
+			new_features
+			func(*args,**kwargs)
+		return wrapper
+
+	def basic(base_vars):
+		exec_stat
+	new_func = add_features(basic,variables)	-> Non-decorative call
+			OR
+	@add_features				-> Decorative Call using @
+		def basic(base_vars):
+			exec_stats
+	basic(variables)
