@@ -1,16 +1,23 @@
 Creating a new class creates a new type of object, a means of bundling data and functionality together.
+-> Absraction(Hiding), Encapsulation(Combined), Inheritance(Inherit_features), Polymorphism(Multiple_forms)
+
 # Basic Syntax
 	class Class_Name:
 		"A doc string here"	-> Obtained by using x.__doc__
+
 		var = value			-> Class variables common for all
-		def __init__(self,vars):	-> Runs initially after declaring the class
+
+		def __init__(self,vars):	-> Runs initially after declaring the class *[Constructor]*
 			self.vari = []		-> Instance Variables different for all
+
 		def other_func(self):
 			Execute_statement
 
-# Inheritance
-	class DerivedClassName(BaseClassName):	-> Could be multiple base classes
-		statements_execution
+		Class_Name.database.append(self)	-> Creates a database of class
 
-	isinstance(obj,base), issubclass(c1,c2)	-> Checking if it is a derived-class or sub-class
+	-> Some more Dunder functions
+		def __repr__(self):
+			return string_format	-> Represents in this format when print is used
+		def __str__(self):	-> Representation foormat when str() is used
+
 

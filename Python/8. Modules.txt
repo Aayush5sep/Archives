@@ -1,7 +1,7 @@
 # Creating Modules
 	-> Create simple functions only for use as module
 	-> Module as Script
-		if __name__ == "__main__":
+		if __name__ == "__main__":	-> True only when the file is runned directly instead of importing
 
 # Importing Modules
 	from {{file_name}} import {{func_name}} as {{new_name}}
@@ -11,9 +11,9 @@
 	Structuring Python’s module namespace by using “dotted module names”
 	import sound.effects.echo
 	sound/                          Top-level package
-      	__init__.py               Initialize the sound package
+      	__init__.py               Initialize the sound package 
       	formats/                  Subpackage for file format conversions
-              	__init__.py
+              	__init__.py		-> Important to add to consider as package-part & can be empty
               	wavread.py
               	wavwrite.py
       	effects/                  Subpackage for sound effects

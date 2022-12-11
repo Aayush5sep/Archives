@@ -1,18 +1,25 @@
 # List Declaration
 	list = [a,b,c,d,e]
+	my_list = list(range())
 	alternate_list = [f(x) for x in range]
 	[(x, y) for x in range for y in range if condition]
 
 # Indexing & Slicing & Concatenation
 	works like same that of string
-		[:], list1+list2, list[i]=new, len()
+		[start:end:stepsize], list1+list2, list[i]=new, len()
+		negative stepsize reverses the list
 
 # Nested Lists -> List inside List
 
 # Imp Functions
-	list.append() adds element at the last
+	list.append() adds element at the last in the same datatype(list,tuple,dict)
+	list.extend() adds elements from the iterable datatype
 	list.insert(i, x)
 	list.remove(x)
 	list.pop([i])
 	list.clear()
 	list.count(x)
+	del a[i:j]
+
+# Iterating
+	for i,v in enumerate(list)	-> gives index and item

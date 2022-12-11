@@ -1,21 +1,23 @@
-# Variables
-	No Format Declaration, Simply use them
-
 # I/O
-	var = datatype(input("statement"))
+	var = datatype(input("statement"))		-> Input Datatypes: str,int
+
 	print("",var)
 	print(f'output contains {variable} also')
+		{var:.nf}	-> Limit the decimal places
+		{var:n} or {var:nd}	-> Minimum Number of characters wide
+		{var!r / !a / !s}	  -> s for str, a for ascii, r for repr
+		{var=}	-> For priniting both variable name and value
+
 	print("",end="")  -> end is used for removing newline after print
 	print("","",sep="")  -> sep is used for adding something after every new string
 
 # Comments [Very Important]
-	# for single line
-	"""  """ for multiline
+	# for single line		"""  """ for multiline
 
 # Maths
+	range(a,b) or range(b) gives list of number from a to b
 	+,-,*,% as they are used
 	/ for floating division
 	// for non-fractional/non-decimal part
 	** for power
-	range(a,b) or range(b) gives list of number from a to b
 	

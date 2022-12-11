@@ -7,3 +7,13 @@
 # Context Manager(with) -> Prevents memory leak since no use of f.close()
 	with open("file_name", 'open_mode') as f:
 		statements_execution
+
+# File Writing	-> In 'w' or 'a' mode
+	f.write("Lines here\n")
+
+# Reading Files
+	f.read(no_of_chars)	-> Reads the whole file as it is if no_of_chars not specified
+	f.readline()	-> Read 1 line only
+	f.readlines()	-> List of all lines
+	f.tell()	-> Current Position of file handle
+	f.seek(index)	-> Change position of file handle

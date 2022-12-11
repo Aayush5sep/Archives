@@ -1,0 +1,10 @@
+# Inheritance
+	class DerivedClassName(BaseClassName):	-> Could be multiple base classes
+		statements_execution
+
+	isinstance(obj,base), issubclass(c1,c2)	-> Checking if it is a derived-class or sub-class
+
+# Additional Attributes And Super(For Reconstruction)
+	def __init__(self,vars):
+		additional_statements
+		super().FunctionName(varis)	-> Super is used to call BaseClassFunctions(e.g. __init__) when it is re-initialized
