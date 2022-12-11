@@ -1,10 +1,19 @@
 # Inheritance
 	class DerivedClassName(BaseClassName):	-> Could be multiple base classes
 		statements_execution
+	
+	-> Multi-Level Inheritance & Multiple Inheritance both can be done
 
-	isinstance(obj,base), issubclass(c1,c2)	-> Checking if it is a derived-class or sub-class
+	-> isinstance(obj,base), issubclass(c1,c2)	-> Checks if it is a derived-class or sub-class
 
 # Additional Attributes And Super(For Reconstruction)
 	def __init__(self,vars):
 		additional_statements
-		super().FunctionName(varis)	-> Super is used to call BaseClassFunctions(e.g. __init__) when it is re-initialized
+		super().FunctionName(varis)	-> Super is used to call BaseClassFunctions(e.g. __init__)
+							-> Parent function is overwritten when re-initialized
+
+# Method Resolution Order (MRO)
+	-> All classes are inherited from object-class which contains __init__ , __new__ & more
+	-> __new__ method runs first secretly which allocates memory
+	-> In multiple inheritance with common base_class_functions, the first inherited class is preferred
+		class_name.mro()	to check preference order

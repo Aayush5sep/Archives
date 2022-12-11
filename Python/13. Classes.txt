@@ -2,7 +2,7 @@ Creating a new class creates a new type of object, a means of bundling data and 
 -> Absraction(Hiding), Encapsulation(Combined), Inheritance(Inherit_features), Polymorphism(Multiple_forms)
 
 # Basic Syntax
-	class Class_Name:
+	class Class_Name():
 		"A doc string here"	-> Obtained by using x.__doc__
 
 		var = value			-> Class variables common for all

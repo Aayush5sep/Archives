@@ -1,0 +1,13 @@
+One function name can have different functionality for different kinds
+
+# Polymorphism -> Operators, Function, Class level
+	Operator Level => Different functionalities using +,-,*,=
+			   => Joining lists, strings etc.
+
+	Function Level => len() works different to calculate number_of_elements for list,string,dictionary etc.
+			   => args & kwargs is working for different number of arguments
+
+	Class Level    => Same function defined for different classes behave differently
+			   => Different animals having different results for speak()
+			   => Can be done using multiple defined classes having function with same name
+			   => Could be done by overwriting in Inheritance
