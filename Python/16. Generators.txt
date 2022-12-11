@@ -1,0 +1,17 @@
+-> Generator is a kind of function that returns a sequence of values we can iterate on.
+-> It yield values and not return.
+
+# Generators
+	def my_generator():
+		yield first_value
+		yield second_value	-> Multiple yield values to iterate on
+
+	=> Using *Iterators* to get values of generator function
+		next(my_gen)	where	my_gen = my_generator()
+	=> The my_gen is maintains the records and pauses the execution unlike return which terminates.
+
+# Generator Expressions
+	my_gen = (fx for x in range() if condition_x)	-> Generator using () instead of []
+	
+	=> Memory And Time Efficient
+	=> Since all elements are not loaded at once and loaded only when next is called
