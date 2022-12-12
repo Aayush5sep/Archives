@@ -1,0 +1,13 @@
+# Virtual Environments
+	=> Pipenv
+		pipenv install package_name
+		pipenv shell
+	
+	=> Venv
+		python3 -m venv folder_name
+		folder_name\Scripts\activate.bat
+
+# Packages
+	python -m pip install package_name
+	python -m pip install --upgrade package_name
+	python -m pip install package_name==version_number

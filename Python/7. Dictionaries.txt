@@ -12,6 +12,7 @@
 	.clear()
 	.items()	-> Returns key,value pairs
 	.values()
+	.get()	-> To check if key is present in dictionary
 
 # Iterating
 	for k, v in d.items():

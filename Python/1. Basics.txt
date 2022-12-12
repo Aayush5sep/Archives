@@ -3,7 +3,7 @@
 
 	print("",var)
 	print(f'output contains {variable} also')
-		{var:.nf}	-> Limit the decimal places
+		{var:.nf}	-> f gives decimal digits after the point, g gives number of significant digits
 		{var:n} or {var:nd}	-> Minimum Number of characters wide
 		{var!r / !a / !s}	  -> s for str, a for ascii, r for repr
 		{var=}	-> For priniting both variable name and value

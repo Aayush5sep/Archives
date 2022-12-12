@@ -2,7 +2,7 @@
 	math.pi, .pow(base,power), .factorial(integer), .floor(smaller_value), .ceil(higher_value)......
 
 # random
-	random.randint(start,end), .random()
+	random.randint(start,end), .random(), random.choice(list), random.choices(list, weights=wlist)
 
 # os
 	os.getcwd() get_current_working_directory, .mkdir() make_directory, .remove('file_name'), .removedirs("dir"),
@@ -13,3 +13,8 @@
 
 # datetime
 	datetime.datetime.now()
+
+# urllib.request	-> Url Handling
+# smtplib	-> Email handling
+# zlib, gzip, zipfile, tarfile	-> Compressing Files
+# timeit	-> Time measuring for executions
