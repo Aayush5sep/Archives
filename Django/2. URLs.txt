@@ -1,8 +1,8 @@
 from django.urls import include, path
 urlpatterns = [
-	path('', views.index, name='index'),
-	path('url/', include('app_name.urls')),
-	path('dynamicurl/<datatype:variable_name>', views.function), ]
+	path('', views.index, name='index'),	-> Simple url to map to a view function to execute
+	path('url/', include('app_name.urls')),	-> Map to another url.py file
+	path('dynamicurl/<datatype:variable_name>', views.function), ]	-> Variable data in the url
 
 Patterns don’t search GET and POST parameters, or the domain name.
 	domain/myapp/  and domain/myapp/?page=4  both will look for only myapp/
