@@ -1,1 +1,20 @@
-django-admin startproject {{project_name}}
+# Start New Project
+	django-admin startproject {{project_name}}
+
+# Add Apps to the project
+	django-admin startapp {{app_name}}
+  \\ Add to Installed Apps in Settings.py
+
+# Run Server
+	python manage.py runserver
+
+# Create Admin Dashboard Superuser
+	python manage.py createsuperuser
+
+# Migrate Changes In Models
+	python manage.py makemigrations
+	python manage.py migrate
+
+# WSGI & ASGI	=> Entry point to serve a project
+	Web Server Gateway Interface -> Single and Synchronous calls
+	Asynchronous Server Gateway Interface -> Multiple Asynchronous calls
