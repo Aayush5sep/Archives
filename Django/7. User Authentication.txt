@@ -1,0 +1,13 @@
+# Built In User Authentication
+	from django.contrib.auth.models import User
+	from django.contrib.auth import authenticate,login,logout
+
+# New User
+	User.objects.create_user(username,email,password)
+
+# Login User
+	user = authenticate(username=username,password=password)
+	login(request,user)
+
+# Logout User
+	logout(request)
