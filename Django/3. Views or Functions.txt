@@ -1,0 +1,12 @@
+from django.http import HttpResponse,Http404
+from django.shortcuts import render,redirect
+
+def func(request,args):
+	return output
+	raise Http404("Details for the error")
+
+Output ->	HttpResponse("This is an http output %s" % s_variable)
+		render(request, 'template_file_path', parameters)
+		redirect('redirect_url')
+
+# Generic Views
