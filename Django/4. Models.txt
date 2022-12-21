@@ -1,0 +1,19 @@
+A model is the single, definitive source of information about your data.
+
+from django.db import models
+class Model_Name(models.Model):
+	var = models.FieldTypes()
+	def __str__(self):
+		return self.var
+	def fn_name(self):
+
+FieldTypes -> Binary,Boolean,Char,Date,DateTime,Decimal,Email,File,FilePath,Float,Image,
+		   Integer,Slug,Text,Time,URL,ForeignKey(ManyToOne),ManyToMany,OneToOne
+
+Field Options -> null(empty values as NULL),blank,choices(list of tuples),default,editable,
+			primary_key,unique,max_length,auto_now(last modified),auto_now_add(first time),
+			decimal_places,upload_to,on_delete(Cascade,Protect,Restrict,set_default,set(),do_nothing),
+			verbose_name(first string argument of model)
+ManyToManyField -> 'through' gives option to connect two different models and keeping extra unique info about them
+			  e.g. -> Person, Group(manytomany(person,through=membership), Membership(F.K.(person,group))
+
