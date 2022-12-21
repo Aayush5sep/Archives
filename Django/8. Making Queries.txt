@@ -1,0 +1,22 @@
+# Creating Objects
+	obj = Model(col1='', col2='')  OR  obj.col3 = ''
+	obj.save()
+
+	Model.objects.create(col='')
+	Model.col.add(obj) -> For Manytomany
+
+# Retrieving Objects
+	All => Model.objects.all()
+	Filtering => Model.objects.filter(**kwargs)
+			 Model.objects.exclude(**kwargs)
+	Single => Model.objects.get(**kwargs)
+	Ordering => Model.objects.order_by('col') for asc  &&  '-col' for desc
+	Values => Model.objects.filter().values()
+
+# Field Lookups -> field__lookuptype = value
+	__exact(default lookup) searches for exact value, __iexact is case insensitive exact,
+	__contains searches for Like value, __icontains is case insensitive contain,
+	__startswith, __istartswith, __endswith, __iendswith,
+	model__colname__looktype is also possible for relationship models related using F.K.,MTM,OTO
+	__isnull(Boolean), __has_key(Dictionaries), __has_any_keys(Dictionaries atleat 1 search), __in(List),
+	__gte(Greater than equal to), __lte(lesser equal), __range=(start,left)
