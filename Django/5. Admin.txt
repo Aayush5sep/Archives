@@ -1,3 +1,25 @@
-from django.contrib import admin
-import models
-admin.site.register(model)
+# Basic Admin
+	from django.contrib import admin
+	import models
+	admin.site.register(model)
+
+# Custom Admin & Related Objects
+	class ChoiceAdmin(admin.StackedInLine):	OR TabularInLine
+		model = Choice
+		extra = 4
+	class QuestionAdmin(admin.ModelAdmin):
+		fields = ['col_name1','col_name2']
+		fieldsets = [
+			('header1', {'fields':['col_name1']}),
+			('header2', {'fields':['col_name2']}),
+		]
+		inlines = [ChoiceInLine]
+	admin.site.register(Question,QuestionAdmin)
+
+# Custom Admin Change List
+	list_display = ('col1','col2')
+	list_filter = ['col']
+	list_display_links = ('') Clickable columns on summary page
+	readonly_fields = ('') non-editable fields in admin panel
+	ordering = ('-col',)
+	prepoulated_fields = {'col2':('col1',)}
