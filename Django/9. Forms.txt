@@ -1,0 +1,26 @@
+# HTML Forms
+	<form action='/submit_url/' method="post/get"> {% csrf_token %}
+	<input type="input_type" name="" id="" placeholder="">
+	<button type="submit" name="">  </button>
+# Obtaining Data
+	if request.method=='POST/GET':
+		var = request.POST['input_name']
+
+# Django Forms
+	from django import forms
+	class NameForm(forms.Form):
+		field = forms.DataTypeField(label='field', max_length=100)
+	=> Rendering Form
+		form = NameForm()
+		return render(request,'',{form:form})
+		{{form}} in html template
+	=> Getting Details
+		form = NameForm(request.POST)
+		if form.is_valid():
+			field = form.cleaned_data['field_name']
+
+# Field Classes -> Boolean,Char,Choice,Date,DateTime,Decimal,Email,File,FilePath,Float,Image,
+				Integer,MultipleChoice,Slug,Time,URL
+
+# Field Arguments -> required,label,lebel_suffix,initial,help_text,error_messages,
+				max_length,min_length,max_value,min_value,path
