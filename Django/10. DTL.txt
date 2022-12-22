@@ -1,0 +1,22 @@
+# Variables -> {{ var }}
+# Comments -> {# comment here #}  OR  {% comment %} for multi line comments
+
+# Tags -> {% tag_name %}
+	{% autoescape on/off %}  {% endautoescape %}
+	{% block some_name %}  {% endblock %}
+	{% csrf_token %}
+	{% extends "file.html" %}
+	{% filter filter_pipes %}  {% endfilter %}
+	{% for x in y %}  {{ x }}  {% empty %}  Text when empty for  {% endfor %}
+	{% if condition %}  {% elif condition %}  {% else %}  {% endif %}
+	{% ifchanged var %}  {% endifchanged %}  compares last iteration data
+	{% include "file.html" %}
+	{% lorem [count] [method] [random] %}	methods-> w,p,b
+	{% now "" %}
+	{% url 'some_url_name' arg1 arg2 %}
+	{% load static %}  {% static 'path' %}
+
+# Filter References -> {{ var|filter }}
+	|add:"value", |capfirst, |center:"width", |cut:"string/char", |default:"str", |default_if_none:"str",
+		|escape, |escapejs, |filesizeformat, |first, |last, |join:"str", |length, |lower, |upper, |random,
+		|safe, |slice:"count", |title, |truncatechars:count, |truncatewords:count, |wordcount
