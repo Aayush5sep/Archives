@@ -22,3 +22,4 @@ Model Methods -> 	def custom_function_row(self):
 				return something
 Predefined ->  def save(self,*args,**kwargs):	or delete()
 			  super().save(*args,**kwargs)
+		save() or delete() can be used to call other functions as well in model itself

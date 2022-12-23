@@ -4,7 +4,7 @@
 	admin.site.register(model)
 
 # Custom Admin & Related Objects
-	class ChoiceAdmin(admin.StackedInLine):	OR TabularInLine
+	class ChoiceAdmin(admin.StackedInline):	OR TabularInline
 		model = Choice
 		extra = 4
 	class QuestionAdmin(admin.ModelAdmin):

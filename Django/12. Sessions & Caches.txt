@@ -1,0 +1,2 @@
+The session framework lets you store and retrieve arbitrary data on a per-site-visitor basis.
+Cookies contain a session ID – not the data itself unless using the cookie based backend.
