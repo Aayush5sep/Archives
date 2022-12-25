@@ -36,3 +36,7 @@
 
 	Checking For Permission Using Decorator => @permission_required('perm')
 	Checking For Permission In Template => {% if perms.app.add_model %}
+
+	Checking For Group =>	
+		def is_in_multiple_groups(user):
+    			return user.groups.filter(name__in=['group1', 'group2']).exists()

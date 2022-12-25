@@ -1,13 +1,16 @@
-A model is the single, definitive source of information about your data.
+=> A model is the single, definitive source of information about your data.
 
-from django.db import models
-class Model_Name(models.Model):
-	var = models.FieldTypes()
-	def __str__(self):
-		return self.var
+# Declaring Model
 
-FieldTypes -> Binary,Boolean,Char,Date,DateTime,Decimal,Email,File,FilePath,Float,Image,
-		   Integer,Slug,Text,Time,URL,ForeignKey(ManyToOne),ManyToMany,OneToOne
+	from django.db import models
+	class Model_Name(models.Model):
+		var = models.FieldTypes()
+		def __str__(self):
+			return self.var
+
+# FieldTypes 
+	Binary,Boolean,Char,Date,DateTime,Decimal,Email,File,FilePath,Float,Image,
+	Integer,Slug,Text,Time,URL,ForeignKey(ManyToOne),ManyToMany,OneToOne
 
 Field Options -> null(empty values as NULL),blank,choices(list of tuples),default,editable,
 			primary_key,unique,max_length,auto_now(last modified),auto_now_add(first time),

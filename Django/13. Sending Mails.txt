@@ -1,0 +1,18 @@
+=> Create App Password for SMTP Mail etc.
+
+=> Settings.py
+	EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+	EMAIL_HOST = 'smtp.gmail.com'
+	EMAIL_USE_TLS = True
+	EMAIL_PORT = 587
+	EMAIL_HOST_USER = Email_id
+	EMAIL_HOST_PASSWORD = App_Pass
+
+=> Views.py
+	from django.conf import settings
+	from django.core.mail import send_mail,send_mass_mail
+
+	send_mass_mail( subject, description, email_from, recipients )
+
+	send_mass_mail( (message1, message2), fail_silently=False )
+	send_mass_mail( ((subject, description, email_from, recipients),), fail_silently=False )
