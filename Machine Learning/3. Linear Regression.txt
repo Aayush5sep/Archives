@@ -1,0 +1,24 @@
+# Linear Regression [Supervised ML]
+	Creating a best-fit linear line with minimal error based on I/P O/P data
+	y is a linear function of x [ y = mx + c ]
+
+	=> Cost function = summasion of [(ya - yp)^2]/2n	
+		ya -> actual y, yp -> predicted y, n-> number of points
+
+	=> Start at some point m & c 
+		Minimize cost function for minimal errors
+
+	=> Gradient Descent/Convergence Algorithm
+		m(i+1) = m(i) - a*derivative(cost_function)	a -> learning rate(usually 0.01)
+		Repeat until m(i+1) & m(i) becomes almost equal
+
+	=> Final Equation becomes
+		m(i+1) = m(i) - (a/n)*summasion(ya - yp)*x
+		c(i+1) = c(i) - (a/n)*summasion(ya - yp)
+
+# Performance Metrics -> R^2  &  Adjusted R^2
+
+	=> R^2 = 1 - [summasion of (ya - yp)^2]/[summasion of (ya - ymean)^2]
+
+	To overcome problems of R^2,
+	=> Adj R^2 = [1 - (1 - R^2)*(n-1)]/[n - p -1]	p -> number of features

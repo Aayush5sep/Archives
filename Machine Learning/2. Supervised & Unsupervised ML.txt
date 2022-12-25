@@ -1,0 +1,20 @@
+			|-----> Regression
+# Supervised ML --|	
+		    	|-----> Classification
+
+	=> Supervised ML includes mapping of input attributes to create an almost-fit model
+		Both Independent & Dependent Features are in the input attributes
+		Using the trained model, O/P(dep.feature) is predicted by input(indep.features)
+
+	=> Regression problem includes continuous variable functions when trying to find output
+	=> Classification problem however have fixed number of output categories
+
+				|------> Clustering
+# Unsupervised ML ------|
+				|------> Dimensionality Reduction
+
+	=> Unsupervised ML does not contain any dependent features/variable
+		Assumptions are therfore made based on the independent input data
+
+	=> Clustering is segmenting users into different groups based on their attributes
+	=> DR is used to reduce/lower_down/combine a high number of features into small number of features

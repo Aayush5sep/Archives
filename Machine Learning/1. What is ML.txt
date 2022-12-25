@@ -1,0 +1,23 @@
+=> Traditional Programming
+
+			|=>	Data
+	Rules	------|				[ Coding And Compiling Phase ]
+			|=>	Answers
+
+=> Machine Learning
+
+	Data--------|
+			|=>	Rules			[ Training Phase ]
+	Answers-----|
+
+	Data--------|=>	Prediction		[ Inference Phase ]
+
+# ML is part of AI
+
+	=> AI application is able to do its own task withou any human intervention.
+	=> ML provides stat tools to analyze, visualize, predictions & forecasting data.
+
+							Machine Learning
+			-------------------------------------------------------------
+			|					|					|
+		Supervised ML			Unsupervised ML			Reinforcement ML
