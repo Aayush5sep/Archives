@@ -11,7 +11,7 @@
 		=> adj[a][b] = weight for weighted graphs
 
 	2> Adjacency List
-		=> vector<int> adj(n+1)
+		=> vector<int> adj[n+1]
 		=> adj[a].push_back(b)
 		=> adj[b].push_back(a) for undirected graphs
 		=> pair<int> to be stored for weighted graphs
