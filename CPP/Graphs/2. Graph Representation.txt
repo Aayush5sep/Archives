@@ -1,0 +1,17 @@
+# Representation Of Graph In C++
+
+	Input => 	n(vertices) 
+			m(edges) 
+			m_number_of_lines(a & b edge between node)
+
+	1> Adjacency Matrix
+		=> adj[n+1][n+1]
+		=> adj[a][b] = 1
+		=> adj[b][a] = 1 for undirected graphs
+		=> adj[a][b] = weight for weighted graphs
+
+	2> Adjacency List
+		=> vector<int> adj(n+1)
+		=> adj[a].push_back(b)
+		=> adj[b].push_back(a) for undirected graphs
+		=> pair<int> to be stored for weighted graphs

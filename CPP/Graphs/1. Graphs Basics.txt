@@ -1,0 +1,19 @@
+# Graphs
+	=> Directed Graph/Unidirectional
+	=> Undirected Graph/Bidirectional
+
+	=> Cyclic [start at same node & end at same node]
+	=> Acyclic
+
+# Path => Contain a lot of nodes, no node is repeated & each of them are reachable
+
+# Degree Of A Node => Number of nodes attached to the node
+	=> Total degree of graph = 2*Total number of edges
+	=> Indegree is poiniting towards node 
+	=> Outdegree is pointing away from node
+
+# Weighted Graph => Weight is assigned to each edge
+
+# Connected Components
+	=> A graph can have components which are not connected to each other by some edge
+	=> For Traversal, visited array is used to go for every unvisited edge
