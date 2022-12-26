@@ -1,0 +1,27 @@
+# Depth First Search Traversal
+
+	=> Working based on Recursion
+	=> Traverses to the lowest nodes of a neighbour and then same for the other neighbours
+
+
+# Applying DFS
+	
+	=> starting_node, visited_array
+	=> Mark starting node visited
+	=> Call recursive function dfs(starting_node)
+	=> function dfs(node){
+		List.add(node)
+		node=visited
+		for(auto it:adj[node]){
+			if node is not visited{
+				dfs(it)
+			}
+		}
+	   }
+
+# Extra for connected components
+	for(i=1->n){
+		if(visited[i]==0){
+			dfs_traversal
+		}
+	}

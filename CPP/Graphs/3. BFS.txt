@@ -1,0 +1,13 @@
+# Breadth First Search => Level Wise Traversal
+
+	=> Starting Node is the 0th level
+	=> Distance from the starting node is the level of that node
+
+# Applying BFS
+	
+	=> starting_node, visited_array, queue(first-in-first-out)
+	=> Push starting_node into queue & mark as visited
+	=> Pull out from queue, mark as visited & push its unvisited-neighbours into queue
+	=> Store this pushed out element from queue in a list
+	=> Repeat this until the queue is empty
+	=> Our list is the bfs traversal result
